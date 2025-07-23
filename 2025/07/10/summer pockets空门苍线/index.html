@@ -175,7 +175,26 @@
     
             
                 
-                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
+                    <style>
+/* 0.1.4 专用：把 canvas 缩小到人物区域 */
+.live2d-widget {
+  position: fixed !important;
+  right: 20px  !important;   /* ← 水平位置，自己改 */
+  bottom: 10px !important;   /* ← 垂直位置，自己改 */
+  width: 180px  !important;  /* ← 画布宽 ≈ 人物宽 */
+  height: 220px !important;  /* ← 画布高 ≈ 人物高 */
+  overflow: hidden;
+  pointer-events: auto;      /* 只有这块可点 */
+  z-index: 9999;
+}
+
+/* 让舞台其余部分彻底消失，不再挡按钮 */
+.live2d-widget::before,
+.live2d-widget::after {
+  content: none;
+}
+</style>
+
                 
     
 
@@ -671,12 +690,12 @@
 		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
 			
 			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="prev" rel="prev" href="/2025/07/11/%E8%AF%81%E6%98%8E%E6%AD%A3114514%E9%9D%A2%E4%BD%93%E4%B8%8D%E5%AD%98%E5%9C%A8/">
+				<a class="prev" rel="prev" href="/2025/07/10/%E5%8F%8B%E9%93%BE/">
 					<span class="left arrow-icon flex justify-center items-center">
 						<i class="fa-solid fa-chevron-left"></i>
 					</span>
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">证明正114514面体不存在</span>
+						<span class="post-nav-title-item truncate max-w-48">友链</span>
 						<span class="post-nav-item">上一篇</span>
 					</span>
 				</a>
@@ -684,9 +703,9 @@
 			
 			
 			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="next" rel="next" href="/2025/07/10/%E5%8F%8B%E9%93%BE/">
+				<a class="next" rel="next" href="/2025/06/26/novel1/">
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">友链</span>
+						<span class="post-nav-title-item truncate max-w-48">紫罗兰的堙灭-第一卷-第一篇-第一章</span>
 						<span class="post-nav-item">下一篇</span>
 					</span>
 					<span class="right arrow-icon flex justify-center items-center">
@@ -1068,6 +1087,6 @@
 
 
 	
-</body>
+<!-- hexo injector body_end start --><script data-pjax src="https://registry.npmmirror.com/oh-my-live2d/latest/files/dist/index.min.js"></script><script>const oml2d = OML2D.loadOml2d({dockedPosition:"right",mobileDisplay:false,models:[{"path":"/live2d-models/Murasame/model0.model3.json","scale":0.18,"motionPreloadStrategy":"ALL","position":[20,100],"stageStyle":{"width":350,"height":400,"pointer-events":"none"}}],menu:{"items":[{"name":"info","icon":"info","click":"() => window.open('https://www.bilibili.com/video/BV1mb4y1i7xu/', '_blank')\n"}]}});</script><!-- hexo injector body_end end --></body>
 
 </html>
