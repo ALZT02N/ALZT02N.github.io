@@ -175,20 +175,25 @@
 /* 0.1.4 专用：把 canvas 缩小到人物区域 */
 .live2d-widget {
   position: fixed !important;
-  right: 20px  !important;   /* ← 水平位置，自己改 */
-  bottom: 10px !important;   /* ← 垂直位置，自己改 */
-  width: 180px  !important;  /* ← 画布宽 ≈ 人物宽 */
-  height: 220px !important;  /* ← 画布高 ≈ 人物高 */
+  right: 20px  !important;   
+  bottom: 10px !important;   
+  width: 180px  !important; 
+  height: 220px !important;  
   overflow: hidden;
-  pointer-events: auto;      /* 只有这块可点 */
+  pointer-events: auto;      
   z-index: 9999;
 }
-
-/* 让舞台其余部分彻底消失，不再挡按钮 */
 .live2d-widget::before,
 .live2d-widget::after {
   content: none;
 }
+</style>
+<style>
+  .footer-customize {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 </style>
 
                 
@@ -593,6 +598,12 @@
 		<div class="main-content-footer">
 			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
     <div class="info-container py-3 text-center">
+        
+            <div class="customize-info my-1"><div style="display: flex; align-items: center; gap: 8px; justify-content: center; margin-top: 10px;">
+  <img style="width:20px; height:20px; vertical-align: middle;" src="http://k9b.cn/tb/">
+  <a href="https://icp.k9b.cn/?id=20250721" target="_blank" style="color: inherit;">喵ICP备 20250721 号~</a>
+</div>
+</div>
         
         <div class="text-center">
             &copy;
