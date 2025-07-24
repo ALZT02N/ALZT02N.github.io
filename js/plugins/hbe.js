@@ -214,7 +214,7 @@ export function initHBE() {
         }
 
         const hideButton = document.createElement("button");
-        hideButton.textContent = "Encrypt again";
+        hideButton.textContent = "再次加密文章";
         hideButton.type = "button";
         hideButton.classList.add("hbe-button");
         hideButton.addEventListener("click", () => {
