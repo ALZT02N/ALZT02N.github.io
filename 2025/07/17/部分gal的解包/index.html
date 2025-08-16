@@ -140,7 +140,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-07-16T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-08-13T11:15:54.579Z">
+<meta property="article:modified_time" content="2025-08-16T03:05:03.150Z">
 <meta property="article:author" content="ALZT02">
 <meta property="article:tag" content="柚子社">
 <meta property="article:tag" content="魔女的夜宴">
@@ -582,8 +582,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-08-13 19:15:54</span>
-            <span class="mobile">2025-08-13 19:15:54</span>
+            <span class="desktop">2025-08-16 11:05:03</span>
+            <span class="mobile">2025-08-16 11:05:03</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -641,12 +641,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>3.7k 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>4.6k 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>13 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>16 分钟</span>
         </span>
     
     
@@ -665,16 +665,15 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<h1 id="Galgame解包"><a href="#Galgame解包" class="headerlink" title="Galgame解包"></a>Galgame解包</h1><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2>
+			<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2>
   <div class="note p-4 mb-4 rounded-small markdown-body danger">
     <p><mark>注意：本篇教程仅供参考学习，学习后请于24小时内删除学习成果。禁止传播学习文件，本文作者不负任何可能的法律责任。解包行为可能违反游戏 EULA 和著作权法，获取的资源<strong>仅限于个人学习研究</strong>，<strong>严禁分享、传播或用于任何商业用途</strong>，否则后果自负。</mark></p>
 
   </div>
 
-
-
 <p>请尽量购买原作支持。</p>
 <p>本文教程至少适用于YuzuSoft的所有作品（截至2025.7.10）。教程仅适用于含.xp3的galgame的解包。</p>
+<p>本文含有主观性言论，文笔也不怎么样，还请见谅。后文出现的多个近义词实际上是同一词汇，我文笔不行就只能写成那样了。</p>
 <p>成果示例 以下为游戏原声文件预览 <em>注意，需要保证你的浏览器支持html5，且DNS不被污染</em></p>
 
 
@@ -696,6 +695,7 @@
 ></iframe>
 
 
+<p><strong>工具包</strong></p>
 <ul>
 <li><strong>请注意：</strong> 本文提供的工具包集合了多位开发者的成果。如果您需要<strong>再次分发此工具包本身</strong>，请遵守各工具原作者的许可协议（通常包含在工具包内或项目主页），再次强调，<strong>严禁传播利用这些工具解包获得的游戏原始资源文件</strong>。（最后更新日期25.8.13）</li>
 </ul>
@@ -714,17 +714,17 @@
 </ol>
 <p>部分教程已经详细地写在工具包里了，游戏资源自行去搜。</p>
 <p><mark>最好把游戏置于全英文目录下再进行解包</mark>。</p>
-<h2 id="什么是”包”和”解包”？"><a href="#什么是”包”和”解包”？" class="headerlink" title="什么是”包”和”解包”？"></a>什么是”包”和”解包”？</h2><p><code>包含个人理解</code> 众所周知，游戏厂商做游戏的根本目的是为了<del class="mask">赚钱</del>。倘若直接公开游戏内部文件如源码，音频，图片等资源，则会<del class="mask">动资本的蛋糕</del>，影响<del class="mask">赚钱</del>。各大游戏厂商为了防止自己游戏的源文件泄露给自己造成损失，于是在整合游戏资源的同时进行了一定的加密。被整合的文件整体被称作”包”，而拆解这个包，得到游戏源文件的过程叫做”拆包”或”解包“。通常情况下，拆包需要解密，而解密需要密钥。那么密钥该如何获取呢？</p>
+<h2 id="什么是“包”与“解包”？"><a href="#什么是“包”与“解包”？" class="headerlink" title="什么是“包”与“解包”？"></a>什么是“包”与“解包”？</h2><p><code>包含个人理解</code> 众所周知，游戏厂商做游戏的根本目的是为了<del class="mask">赚钱</del>。倘若直接公开游戏内部文件如源码，音频，图片等资源，则会<del class="mask">动资本的蛋糕</del>，影响<del class="mask">赚钱</del>。各大游戏厂商为了防止自己游戏的源文件泄露给自己造成损失，于是在整合游戏资源的同时进行了一定的加密。被整合的文件整体被称作”包”，而拆解这个包，得到游戏源文件的过程叫做”拆包”或”解包“。通常情况下，拆包需要解密，而解密需要密钥。那么密钥该如何获取呢？</p>
 <p>游戏厂家肯定把游戏密钥储存在游戏内。若储存在线上则更容易被抓包爬虫获取。通过程序注入游戏进程进行动态捕捉即可捕获密钥。所以拆包的核心在于获取密钥。有些游戏没有官中，于是伟大的汉化组自己拆包，汉化，组合，加密手段也会随之改变，我们则需要新的密钥。</p>
 <p>所以我提供的<mark>工具最重要的作用就是获取密钥</mark>。<em>XP3Viewer</em>是暴力破解密钥，旧krkr自带的加密在XP3Viewer前不堪一击。但需要注意的是，仅仅限于2016年前的作品，对2016年以后的作品和2016年以后的汉化游戏没用。但尝试总是可贵的，万一有小厂家加密手段很薄弱呢？<em>KrkrExtract</em>和<em>GARbro</em>是通过历代大佬积累的密钥和解包手段汇集而成的，对游戏原版文件有奇效，但对汉化组的加密就不行了。<em>KrKrDump</em>是人挡杀人，佛挡杀佛，直接根据游戏进程捕获内存密钥解包，遇到什么解什么，理论上可以全部解包(前提是跑完整个游戏流程，语音的提取需要跑完整条语音)。</p>
 <hr>
 <p>在galgame厂商中使用最广泛的游戏制作引擎是unity和krkr。unity的好说，<em>AssetStudio</em>一下子就能全解开。而使用krkr的就比较麻烦了。本文主要讲关于krkr的解包方式。</p>
 <p>那么如何确认自己的galgame是krkr游戏呢？很简单，打开游戏目录，<mark>含有.xp3文件的就是使用krkr引擎制作的游戏了</mark>。</p>
-<h2 id="一般的解包步骤"><a href="#一般的解包步骤" class="headerlink" title="一般的解包步骤"></a>一般的解包步骤</h2><h3 id="1-确认游戏会社-检查资源完整性"><a href="#1-确认游戏会社-检查资源完整性" class="headerlink" title="1.确认游戏会社,检查资源完整性"></a>1.确认游戏会社,检查资源完整性</h3><p>先对比md5检查资源完整性，再自行百度作品，找到游戏会社。若游戏会社规模较小，可直接尝试使用XP3Viewer解包。老游戏（发布日期小于2016）的也可使用。若会社规模较大如YuzuSoft，尝试使用GARbro和KrkrExtract解包。以上手段都不行再使用KrKrDump。</p>
+<h2 id="通用解包流程"><a href="#通用解包流程" class="headerlink" title="通用解包流程"></a>通用解包流程</h2><h3 id="1-确认游戏会社-检查资源完整性"><a href="#1-确认游戏会社-检查资源完整性" class="headerlink" title="1.确认游戏会社,检查资源完整性"></a>1.确认游戏会社,检查资源完整性</h3><p>先对比md5检查资源完整性，再自行百度作品，找到游戏会社。若游戏会社规模较小，可直接尝试使用XP3Viewer解包。老游戏（发布日期小于2016）的也可使用。若会社规模较大如YuzuSoft，尝试使用GARbro和KrkrExtract解包。以上手段都不行再使用KrKrDump。</p>
 <p>对于汉化组汉化的游戏或者经过代理(发行，本地化)商（比如株式会社 HIKARI FIELD）二次加密的游戏，无视以上所有规则，直接使用KrKrDump。</p>
-<p>若游戏目录没有adult.xp3（r18内容)，可自行前往 <a class="link"   target="_blank" rel="noopener" href="https://www.moyu.moe/" >https://www.moyu.moe/<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 或 <a class="link"   target="_blank" rel="noopener" href="https://patches.nekonyansoft.com/" >https://patches.nekonyansoft.com/<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 下载补丁，解压后置于游戏目录。</p>
+<p>若游戏目录没有adult.xp3或patch.xp3（r18内容)，可自行前往 <a class="link"   target="_blank" rel="noopener" href="https://www.moyu.moe/" >https://www.moyu.moe/<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 或 <a class="link"   target="_blank" rel="noopener" href="https://patches.nekonyansoft.com/" >https://patches.nekonyansoft.com/<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 下载补丁，解压后置于游戏目录。</p>
 <p><mark>对于需要注入游戏进程的工具（如 KrkrExtract 和 KrkrDump），强烈建议不要使用 Steam 正版游戏</mark>。Steam 的 DRM 保护和在线验证会干扰程序注入，导致失败或游戏&#x2F;账号异常。推荐使用免安装的版本。对于静态分析工具（GARbro, XP3Viewer），可以尝试直接分析 Steam 游戏目录下的 .xp3 文件，但请注意 Steam 版本的文件结构或加密方式可能与破解版不同，也有很大可能导致解包失败。</p>
-<h3 id="2-下载工具并尝试解包"><a href="#2-下载工具并尝试解包" class="headerlink" title="2.下载工具并尝试解包"></a>2.下载工具并尝试解包</h3><p>正如上文所提，老游戏或小游戏会社游戏尝试使用XP3Viewer解包，再按照GARbro-KrkrExtract-KrKrDump的顺序依次尝试，直至成功。</p>
+<h3 id="2-工具下载与解包尝试"><a href="#2-工具下载与解包尝试" class="headerlink" title="2.工具下载与解包尝试"></a>2.工具下载与解包尝试</h3><p>正如上文所提，老游戏或小游戏会社游戏尝试使用XP3Viewer解包，再按照GARbro-KrkrExtract-KrKrDump的顺序依次尝试，直至成功。</p>
 <h4 id="2-1如何解包"><a href="#2-1如何解包" class="headerlink" title="2.1如何解包"></a>2.1如何解包</h4><ul>
 <li>xp3viewer</li>
 </ul>
@@ -790,7 +790,7 @@
                      
                 ></p>
 <p>可见游戏根目录下出现dump文件夹。<mark><strong>一定要将游戏在后台跑完才能保证资源的完整</strong></mark>。该方法支持续拆。该方法不可能失败（若有预期的文件未被解包，检查某些陌生格式的文件。若不符合你的需求，修改excludeExtensions以自定义排除项）。</p>
-<h3 id="3-进一步的拆包"><a href="#3-进一步的拆包" class="headerlink" title="3.进一步的拆包"></a>3.进一步的拆包</h3><ul>
+<h3 id="3-资源文件的深入提取与转换"><a href="#3-资源文件的深入提取与转换" class="headerlink" title="3.资源文件的深入提取与转换"></a>3.资源文件的深入提取与转换</h3><ul>
 <li>.tlg文件</li>
 </ul>
 <p>.tlg文件是储存立绘的文件。使用garbro将.tlg文件转换成普通图像格式。</p>
@@ -824,7 +824,7 @@
                      
                 ></p>
 <p>黑色窗口消失后，可见独立目录下拆分出两个规则文件和一个文件夹。文件夹内即为cg文件。</p>
-<h3 id="4-CG的整合"><a href="#4-CG的整合" class="headerlink" title="4.CG的整合"></a>4.CG的整合</h3><p>大部分游戏会只使用一张CG的底图，其余为表情差分。若你会PS，当我没说以下的话。若你懂得利用规则文件合成CG，那也当我没说。若你都不会，那么使用AutoCGAligner整合CG。</p>
+<h3 id="4-CG图像的合成"><a href="#4-CG图像的合成" class="headerlink" title="4.CG图像的合成"></a>4.CG图像的合成</h3><p>大部分游戏会只使用一张CG的底图，其余为表情差分。若你会PS，当我没说以下的话。若你懂得利用规则文件合成CG，那也当我没说。若你都不会，那么使用AutoCGAligner整合CG。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
@@ -839,7 +839,8 @@
                      data-src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIvFmhvxlJBjB7xySsRLRIxQ-6DQdnAAAJrGAACXqmBV73N-hl-hn31NgQ.png"
                      
                 ></p>
-<h3 id="5-立绘的拼接"><a href="#5-立绘的拼接" class="headerlink" title="5.立绘的拼接"></a>5.立绘的拼接</h3><p>在解包出.tlg文件，转换成正常图片格式后，大部分人会发现图片并不完整。有的只有表情，有的只有底图。一般地，在fgimagine目录下的子目录内有xxx.stand和xxxa_info.txt和xxxb_info.txt或xxxa.txt和xxxb.txt，xxx为人名。如茉子a.txt。这些类似的文件即立绘拼接的规则文件。</p>
+<h3 id="5-立绘图像的合成"><a href="#5-立绘图像的合成" class="headerlink" title="5.立绘图像的合成"></a>5.立绘图像的合成</h3><h4 id="5-1-对于KrkrExtract能够直接解密的立绘拼接"><a href="#5-1-对于KrkrExtract能够直接解密的立绘拼接" class="headerlink" title="5.1.对于KrkrExtract能够直接解密的立绘拼接"></a>5.1.对于KrkrExtract能够直接解密的立绘拼接</h4><p><strong>利用KrkrExtract解密的立绘合成</strong></p>
+<p>在解包出.tlg文件，转换成正常图片格式后，大部分人会发现图片并不完整。有的只有表情，有的只有底图。<strong>在勾选PBD选项框内的json后</strong>，一般地，在fgimagine目录下的子目录内有xxx.stand和xxxa_info.txt和xxxb_info.txt或xxxa.txt和xxxb.txt，xxx为人名。（txt一般是json，除非原游戏没给这些文件加密）如茉子a.txt。这些类似的文件即立绘拼接的规则文件。</p>
 <p>若你会PS，当我没说以下的话。若你懂得利用规则文件合成立绘，那也当我没说。若你都不会，那么使用krkrFgiEditor整合立绘。和AutoCGAligner是同一个作者。</p>
 <p>在开始之前，自行使用游戏内的立绘鉴赏功能判断xxxa_info.txt和xxxb_info.txt分别是哪个姿势。一般有正身和侧身。</p>
 <p><img  
@@ -877,15 +878,21 @@
                      data-src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAJ-wWicaghCI0R2bznP14BGHJ-l1d6FAAICFwACSijoVNRvP4sNi46FNgQ.png"
                      
                 ></p>
-<p>（可能的示例格式）关于脸红或者黑脸的图层自行探索，详情见工具krkrFgiEditor目录下的README.md。</p>
-<p>以下是其中一张立绘，注意鬓覆盖住了眼睛，即为成功。有更多关于图层的问题，也见工具krkrFgiEditor目录下的README.md。</p>
+<p>（可能的示例格式）</p>
+<p>关于脸红或者黑脸的图层自行探索，详情见工具krkrFgiEditor目录下的README.md。</p>
 <p><strong>立绘的图层储存因人而异</strong>，最好先自己探索。</p>
+<p>以下是其中一张立绘，注意鬓覆盖住了眼睛，即为成功。有更多关于图层的问题，也见工具krkrFgiEditor目录下的README.md。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
                      data-src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAJ-w2icasjg_mqelY-Ky4oI1VE-HB6yAAIKFwACSijoVA1XS0IZJihHNgQ.png"
                      
                 ></p>
+<h4 id="5-2-对于KrkrExtract不能够直接解密的立绘拼接"><a href="#5-2-对于KrkrExtract不能够直接解密的立绘拼接" class="headerlink" title="5.2.对于KrkrExtract不能够直接解密的立绘拼接"></a>5.2.对于KrkrExtract不能够直接解密的立绘拼接</h4><p><strong>利用体验版资源的立绘合成方案</strong></p>
+<p>有的读者会发现在使用KrkrExtract解密时仅仅出现乱码，而使用KrKrDump或GARbro又不能解密立绘规则文件。很令人头疼。我在冥思苦想翻阅B站后，在 <a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/opus/791058256610984007" >《天使騒々RE-BOOT!》解包及CG、立绘合成浅谈 - 哔哩哔哩<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 中找到了答案。这位作者想了个很骚的方法，既然完整版不行，那么就去找体验版吧。</p>
+<p>经过我的实际测试，体验版的整个.xp3文件加密措施不严密且立绘规则文件完整。</p>
+<p>那么接下来使用KrkrExtract解密体验版的.xp3文件，流程见目录 2.1 的KrkrExtract。<strong>需要注意，在解包前勾选PSB Package内的full unpack和PBD内的json和TLG image内的system(png)。</strong> 在进行下一步之前你可以使用体验版的图像来测试测试，流程见目录 5.1 的对于KrkrExtract能够直接解密的立绘拼接。确认无误后，使用KrKrDump解包完整版的.xp3文件，按照目录 3.进一步的拆包 转换.tlg图像格式，把使用体验版解包的立绘规则文件置于完整版立绘图像目录，接下来就可以按照目录 5.1 的流程继续了。</p>
+<p><strong>体验版的文件还请自行搜寻。</strong> </p>
 <h3 id="6-剧本文件的拆解"><a href="#6-剧本文件的拆解" class="headerlink" title="6.剧本文件的拆解"></a>6.剧本文件的拆解</h3><p>某些时候我们需要修改或获取剧本文件。</p>
 <p><img  
                      lazyload
@@ -893,7 +900,7 @@
                      data-src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAI3g2h4mox9Z1NdG03eccTvHjB9z5VbAAKUFwACeGHIV8WYaotNNTSrNgQ.png"
                      
                 ></p>
-<p>.ks或.ks.scn内储存剧本文件，掌管文本显示和立绘的表情等。.ks可以直接打开，.ks.scn需要FreeMoteViewer目录下的PsbDecompile.exe来解密。流程同.pimg文件。</p>
+<p>在补丁(patch+数字或adult+数字)的.xp3文件解包后(这里面的一般最全，其余的会删掉成人内容)找到的.ks或.ks.scn文件内储存剧本文件，掌管文本显示和立绘的表情等。.ks可以直接打开，.ks.scn需要FreeMoteViewer目录下的PsbDecompile.exe来解密。流程同.pimg文件。</p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
@@ -903,8 +910,20 @@
 <p>出现.json文件。.ks.resx.json文件是规则文件，ks.json是解密后的剧本。</p>
 <p>使用我提供的工具的剧本提取目录下的脚本，便于提取文本。带有重名.bat文件的运行.bat文件，配置同样在.bat文件里配置。<strong>所有脚本和配置文件需要放在需要的根目录下运行</strong>。需要Python环境。parser是最核心的提取根本剧本的脚本，可能不适用于某些游戏，这种情况需要你自己观察剧本文件的规律然后重写脚本。</p>
 <p>关于汉化，详细修改和二次封装见<a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/opus/748992517956960297" >Krkr引擎工具合集（二）——脚本、编码、文字 - 哔哩哔哩<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>，这位大佬的文章一定对你有所启发。</p>
+<h3 id="7-常见问题与故障排除"><a href="#7-常见问题与故障排除" class="headerlink" title="7.常见问题与故障排除"></a>7.常见问题与故障排除</h3><p>首先想想是否按照我的说明进行了步骤，再想想是不是资源问题。</p>
+<p>在使用KrkrExtract时会出现一些奇怪的bug。内存不足(insufficient memory)无法被解决，只能更换体验版资源解包。乱码说明加密措施过于严密，程序无法解包。解到一半程序不响应然后闪退说明你勾选的选项太多了，或者资源的某部分文件格式的转换有问题，只要把关键的资源解出来就行。</p>
+<p>本文包含我关于krkr游戏解包的全部知识，就算另有bug我也无法解答了。最后，衷心感谢所有相关工具开发者和技术分享者的贡献，他们的工作为Kirikiri引擎资源的解包与分析奠定了基础。</p>
+<p>参考文献(不分先后)</p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/opus/885261397615706131" >关于以krkr为引擎的galgame解包经验分享 - 哔哩哔哩<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/opus/864999816367702054" >Kirikiri引擎通用拆包方法 - 哔哩哔哩<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/opus/748992517956960297" >Krkr引擎工具合集（二）——脚本、编码、文字 - 哔哩哔哩<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://zimingyuan.github.io/html/krkr%E5%BC%95%E6%93%8E%E8%A7%A3%E5%8C%85%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D.html" >https://zimingyuan.github.io/html/krkr%E5%BC%95%E6%93%8E%E8%A7%A3%E5%8C%85%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D.html<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/opus/746093964791119991" >Krkr引擎工具合集（一）——解包封包 - 哔哩哔哩<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/opus/952945950435835913" >GAL解包的那些事儿 - 哔哩哔哩<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> </p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/opus/791058256610984007" >《天使騒々RE-BOOT!》解包及CG、立绘合成浅谈 - 哔哩哔哩<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<p>最后特别感谢一下 <a class="link"   target="_blank" rel="noopener" href="https://977958.xyz/" >https://977958.xyz/<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> 的站主 芹香serika ，ta为我提供了体验版文件以便验证体验版立绘规则文件可被用于正式版立绘的合成。</p>
 <hr>
-<p>上次更新: 2025.8.13</p>
+<p>上次更新: 2025.8.16</p>
 <p>首次发布:2025.7.10</p>
 <hr>
 <p>好了，以上就是全部教程，希望能够帮到你。若你觉得文章有用，在评论区多多评论吧！或者你可以评论数字1-4，分别对应下图蕾娜的表情。</p>
@@ -929,7 +948,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2025-08-13 19:15:54
+                    :</strong> 2025-08-16 11:05:03
             </li>
         
         <li>
@@ -1065,7 +1084,7 @@
 	<div class="post-toc">
 		<div class="toc-title">目录</div>
 		<div class="page-title">Galgame解包</div>
-		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Galgame%E8%A7%A3%E5%8C%85"><span class="nav-text">Galgame解包</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E2%80%9D%E5%8C%85%E2%80%9D%E5%92%8C%E2%80%9D%E8%A7%A3%E5%8C%85%E2%80%9D%EF%BC%9F"><span class="nav-text">什么是”包”和”解包”？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E8%88%AC%E7%9A%84%E8%A7%A3%E5%8C%85%E6%AD%A5%E9%AA%A4"><span class="nav-text">一般的解包步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%A1%AE%E8%AE%A4%E6%B8%B8%E6%88%8F%E4%BC%9A%E7%A4%BE-%E6%A3%80%E6%9F%A5%E8%B5%84%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="nav-text">1.确认游戏会社,检查资源完整性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%B9%B6%E5%B0%9D%E8%AF%95%E8%A7%A3%E5%8C%85"><span class="nav-text">2.下载工具并尝试解包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E8%BF%9B%E4%B8%80%E6%AD%A5%E7%9A%84%E6%8B%86%E5%8C%85"><span class="nav-text">3.进一步的拆包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-CG%E7%9A%84%E6%95%B4%E5%90%88"><span class="nav-text">4.CG的整合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E7%AB%8B%E7%BB%98%E7%9A%84%E6%8B%BC%E6%8E%A5"><span class="nav-text">5.立绘的拼接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E5%89%A7%E6%9C%AC%E6%96%87%E4%BB%B6%E7%9A%84%E6%8B%86%E8%A7%A3"><span class="nav-text">6.剧本文件的拆解</span></a></li></ol></li></ol></li></ol>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E2%80%9C%E5%8C%85%E2%80%9D%E4%B8%8E%E2%80%9C%E8%A7%A3%E5%8C%85%E2%80%9D%EF%BC%9F"><span class="nav-text">什么是“包”与“解包”？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E7%94%A8%E8%A7%A3%E5%8C%85%E6%B5%81%E7%A8%8B"><span class="nav-text">通用解包流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%A1%AE%E8%AE%A4%E6%B8%B8%E6%88%8F%E4%BC%9A%E7%A4%BE-%E6%A3%80%E6%9F%A5%E8%B5%84%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="nav-text">1.确认游戏会社,检查资源完整性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%B7%A5%E5%85%B7%E4%B8%8B%E8%BD%BD%E4%B8%8E%E8%A7%A3%E5%8C%85%E5%B0%9D%E8%AF%95"><span class="nav-text">2.工具下载与解包尝试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E7%9A%84%E6%B7%B1%E5%85%A5%E6%8F%90%E5%8F%96%E4%B8%8E%E8%BD%AC%E6%8D%A2"><span class="nav-text">3.资源文件的深入提取与转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-CG%E5%9B%BE%E5%83%8F%E7%9A%84%E5%90%88%E6%88%90"><span class="nav-text">4.CG图像的合成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E7%AB%8B%E7%BB%98%E5%9B%BE%E5%83%8F%E7%9A%84%E5%90%88%E6%88%90"><span class="nav-text">5.立绘图像的合成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E5%89%A7%E6%9C%AC%E6%96%87%E4%BB%B6%E7%9A%84%E6%8B%86%E8%A7%A3"><span class="nav-text">6.剧本文件的拆解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4"><span class="nav-text">7.常见问题与故障排除</span></a></li></ol></li></ol>
 
 	</div>
 </div>
@@ -1102,7 +1121,7 @@
                     </span>
                     
                         <span>
-                            共 12k 字
+                            共 12.9k 字
                         </span>
                     
                 </p>
