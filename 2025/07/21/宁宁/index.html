@@ -145,8 +145,8 @@
 <meta property="article:tag" content="柚子社">
 <meta property="article:tag" content="魔女的夜宴">
 <meta property="article:tag" content="绫地宁宁">
-<meta property="article:tag" content="图片">
 <meta property="article:tag" content="galgame">
+<meta property="article:tag" content="图片">
 <meta property="article:tag" content="二次元">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAIjgmhVOmAdmS8-6J_ZvycyOUJURq9BAAJhFAACaQipVvDFa5xcS1aMNgQ.png">
@@ -623,11 +623,11 @@
                     </li>
                 
                     <li>
-                        | <a href="/tags/%E5%9B%BE%E7%89%87/">图片</a>&nbsp;
+                        | <a href="/tags/galgame/">galgame</a>&nbsp;
                     </li>
                 
                     <li>
-                        | <a href="/tags/galgame/">galgame</a>&nbsp;
+                        | <a href="/tags/%E5%9B%BE%E7%89%87/">图片</a>&nbsp;
                     </li>
                 
                     <li>
@@ -732,11 +732,11 @@
 			</li>
 			
 			<li class="tag-item mx-0.5">
-				<a href="/tags/%E5%9B%BE%E7%89%87/">#图片</a>&nbsp;
+				<a href="/tags/galgame/">#galgame</a>&nbsp;
 			</li>
 			
 			<li class="tag-item mx-0.5">
-				<a href="/tags/galgame/">#galgame</a>&nbsp;
+				<a href="/tags/%E5%9B%BE%E7%89%87/">#图片</a>&nbsp;
 			</li>
 			
 			<li class="tag-item mx-0.5">
@@ -791,31 +791,44 @@
 
         
             
-    <div id="waline"></div>
-    <script type="module" data-swup-reload-script>
-      import { init } from '/js/libs/waline.mjs';
-
-      function loadWaline() {
-        init({
-          el: '#waline',
-          serverURL: 'https://alztncomment.netlify.app/.netlify/functions/comment',
-          dark: 'body[class~="dark-mode"]',
-          reaction: false,
-          requiredMeta: ['nick', 'mail'],
-          emoji: ['//unpkg.com/@waline/emojis@1.2.0/bilibili', '//unpkg.com/@waline/emojis@1.2.0/bmoji'],
-                    lang: 'zh-CN',
-        });
-      }
-
-      if (typeof swup !== 'undefined') {
-        loadWaline();
-      } else {
-        window.addEventListener('DOMContentLoaded', loadWaline);
-      }
+    <div id="giscus-container"></div>
+    <script data-swup-reload-script defer>
+        async function loadGiscus() {
+            const giscusConfig = {
+                'src': 'https://giscus.app/client.js',
+                'data-repo': 'ALZT02/Comment',
+                'data-repo-id': 'R_kgDOSRqWdA',
+                'data-category': 'Announcements',
+                'data-category-id': 'DIC_kwDOSRqWdM4C8Hqf',
+                'data-mapping': 'pathname',
+                'data-strict': '0',
+                'data-reactions-enabled': '1',
+                'data-emit-metadata': '0',
+                'data-theme': 'preferred_color_scheme',
+                'data-lang': 'zh-CN',
+                'data-input-position': 'top',
+                'data-loading': 'lazy',
+                'crossorigin': 'anonymous',
+                'async': true
+            }
+            const giscusScript = document.createElement('script');
+            for (const key in giscusConfig) {
+                giscusScript.setAttribute(key, giscusConfig[key]);
+            }
+            document.getElementById('giscus-container').appendChild(giscusScript);
+        }
+        if ('true') {
+            let loadGiscusTimeout = setTimeout(() => {
+                loadGiscus();
+                clearTimeout(loadGiscusTimeout);
+            }, 1000);
+        } else {
+            document.addEventListener('DOMContentLoaded', loadGiscus);
+        }
     </script>
 
 
-
+        
         
     
 </div>
